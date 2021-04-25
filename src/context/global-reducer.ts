@@ -9,8 +9,6 @@ export default function globalReducer(state: State, { type, payload }: Action) {
       return Object.assign({}, state, { userData: payload });
     case 'USER_SIGNED_OUT':
       return Object.assign({}, state, { userData: payload });
-    case 'UPDATE_THEME_COLOR':
-      return Object.assign({}, state, { userData: payload });
     default:
       throw new Error(`Unhandled action type: ${type}`);
   }

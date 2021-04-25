@@ -1,3 +1,4 @@
+[![Test](https://github.com/jctaveras/kaplan-interview/actions/workflows/tests.yml/badge.svg)](https://github.com/jctaveras/kaplan-interview/actions/workflows/tests.yml)
 # Kaplan React Interview
 
 Your goal is to implement a React application with a login screen, welcome page, and account settings. You may use any additional packages in the project you would like. If you are not familiar with TypeScript, you may use JavaScript instead. After completing your work, please send the CodeSandbox URL to your Kaplan contact via email.

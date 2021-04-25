@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# Kaplan React Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Your goal is to implement a React application with a login screen, welcome page, and account settings. You may use any additional packages in the project you would like. If you are not familiar with TypeScript, you may use JavaScript instead. After completing your work, please send the CodeSandbox URL to your Kaplan contact via email.
 
-## Available Scripts
+## Login Page
 
-In the project directory, you can run:
+The login page should accept username/email and password credentials for authentication. Please see the file `Mockup 1.png` in the project as examples of the various states of the login page and the default UI requirements, along with the following details:
 
-### `yarn start`
+1. The login page should have a field for Username / Email Address, Password, and a Login button.
+2. The login button should be disabled until the user has entered both an email address and a password.
+3. The login button should be disabled after being clicked and display a "Loading..." message.
+4. Clicking the login button should call the fake API login.ts function. Half the time the function will fail and half the time it will succeed.
+5. If the function fails the login screen should display the error messages returned, and re-enable the Login button.
+6. If the function succeeds the user should be taken to the Welcome page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Bonus**
+Customers often want a friendly, customized experience that is familiar to them. We would like the ability to change the styles (e.g. colors) of the components, such as the Login button. It is ok to have these styles in code files and apply them with query string or url params. Please see the file `Mockup 2.png` as an example of a 2nd login style.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Welcome Page
 
-### `yarn test`
+After logging in the user should be displayed a welcome page showing their Username / Email address. The user should be able to navigate to the Account page where they can update their Username / Email address. The page should also have a way of logging out of the application and returning to the login screen.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Account Page
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The account page should have an input field for the user to change their current Username / Email address and a Save button to apply the changes. After clicking "Save" the user should be taken back to the Welcome page where their updated Username / Email address displays.

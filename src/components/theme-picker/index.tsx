@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { SketchPicker } from 'react-color';
+import { useLocation } from 'react-router-dom';
 
 import '../../styles/components/theme-picker.css';
 
@@ -10,6 +11,8 @@ export default function ThemePicker() {
   const currentTheme = useTheme();
   const [themeColor, setThemeColor] = useState(currentTheme);
   const [colorPickerVisibility, setColorPickerVisibility] = useState(false);
+  const location = useLocation();
+  const HIDE_HEADER_AT = ['/logout'];
 
   useEffect(() => {
     const style = document.documentElement.style;
@@ -19,6 +22,10 @@ export default function ThemePicker() {
 
     sessionStorage.setItem('theme', themeColor);
   }, [themeColor]);
+
+  if (HIDE_HEADER_AT.includes(location.pathname)) {
+    return null;
+  }
   
   return (
     <div className="theme-picker">

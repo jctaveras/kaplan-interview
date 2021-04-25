@@ -1,0 +1,40 @@
+.app-header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+}
+
+.nav-bar.visible{
+  align-items: flex-start;
+  background-color: var(--main-theme-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-bar.hidden {
+  display: none;
+}
+
+.nav-item {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: var(--main-hover-color);
+  color: #0c0c0c;
+}

@@ -1,0 +1,11 @@
+.conditional-button {
+  background-color: var(--main-theme-color);
+  color: white;
+  font-weight: bold;
+  height: 35px;
+}
+
+.conditional-button:disabled {
+  background-color: #e0e0e0;
+}
+
